@@ -11,7 +11,8 @@
 	  <statBases>
       <MoveSpeed>4.7</MoveSpeed>
       <MarketValue>700</MarketValue>
-      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-18</ComfyTemperatureMin>
+      <ComfyTemperatureMax>49</ComfyTemperatureMax>
       <MeatAmount>90</MeatAmount>
       <LeatherAmount>20</LeatherAmount>
     </statBases>
@@ -53,7 +54,6 @@
       <baseHungerRate>1.8</baseHungerRate>
       <baseHealthScale>2.75</baseHealthScale>
       <foodType>OmnivoreAnimal</foodType>
-      <gestationPeriodDays>40</gestationPeriodDays>
       <wildness>0.6</wildness>
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.25</manhunterOnDamageChance>
@@ -62,6 +62,7 @@
       <leatherDef>dewback_hide</leatherDef>
       <trainability>Advanced</trainability>
       <meatLabel>dewback meat</meatLabel>
+      <gestationPeriodDays>28</gestationPeriodDays>
 	    <wildBiomes>
 		    <AridShrubland>0.02</AridShrubland>
 		    <TemperateForest>0.04</TemperateForest>
@@ -95,7 +96,7 @@
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
     <tradeTags>
-      <li>StandardAnimal</li>
+      <li>AnimalUncommon</li>
       <li>BadassAnimal</li>
       <li>AnimalFighter</li>
     </tradeTags>
@@ -105,7 +106,7 @@
     <defName>Dewback</defName>
     <label>dewback</label>
     <race>Dewback</race>    
-	  <combatPower>325</combatPower>
+	  <combatPower>270</combatPower>
     <ecoSystemWeight>1.5</ecoSystemWeight>
 	  <wildGroupSize>
       <min>2</min>
@@ -189,8 +190,11 @@
     <description>Rancors are large semi-sentient reptilian carnivores native to the planet Dathomir. Standing around five meters tall, with their long arms, immense jaws, and armored hides that could withstand blaster fire, they are formidable predators. A subspecies known as the jungle rancor populates the planets Felucia and Teth.</description>
 	  <statBases>
       <MoveSpeed>7</MoveSpeed>
+      <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
       <MarketValue>3000</MarketValue>
-      <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+      <ComfyTemperatureMin>7</ComfyTemperatureMin>
+      <ComfyTemperatureMax>15</ComfyTemperatureMax>
       <MeatAmount>80</MeatAmount>
       <LeatherAmount>20</LeatherAmount>
     </statBases>
@@ -266,7 +270,6 @@
       <baseHungerRate>0.55</baseHungerRate>
       <baseHealthScale>7</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
-      <gestationPeriodDays>30</gestationPeriodDays>
       <wildness>0.95</wildness>
       <lifeExpectancy>35</lifeExpectancy>
       <trainability>Advanced</trainability>
@@ -274,6 +277,7 @@
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <leatherDef>rancor_hide</leatherDef>
       <meatLabel>rancor meat</meatLabel>
+      <gestationPeriodDays>30</gestationPeriodDays>
 	    <wildBiomes>
 		    <AridShrubland>0.01</AridShrubland>
 		    <TemperateForest>0.01</TemperateForest>
@@ -307,7 +311,7 @@
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
     <tradeTags>
-      <li>StandardAnimal</li>
+      <li>AnimalUncommon</li>
       <li>BadassAnimal</li>
       <li>AnimalFighter</li>
     </tradeTags>
@@ -406,7 +410,8 @@
     <description>Banthas are a species of large, hairy mammals with sharp, spiraling horns. They inhabit the desert planet Tatooine, though they are bred on many worlds throughout the galaxy. They are social herd animals, and are often domesticated, and used prominently, by Tusken Raiders as mounts and companionship.</description>
 	  <statBases>
       <MoveSpeed>4.5</MoveSpeed>
-      <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-18</ComfyTemperatureMin>
+      <ComfyTemperatureMax>49</ComfyTemperatureMax>
       <MarketValue>1250</MarketValue>
       <MeatAmount>90</MeatAmount>
       <LeatherAmount>32</LeatherAmount>
@@ -491,15 +496,15 @@
       <baseBodySize>4.0</baseBodySize>
       <baseHealthScale>5.2</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
-      <gestationPeriodDays>50</gestationPeriodDays>
       <packAnimal>true</packAnimal>
-      <wildness>0.7</wildness>
+      <wildness>0.6</wildness>
       <lifeExpectancy>100</lifeExpectancy>
       <trainability>Simple</trainability>
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
       <leatherDef>bantha_hide</leatherDef>
       <meatLabel>bantha meat</meatLabel>
+      <gestationPeriodDays>28</gestationPeriodDays>
 	    <wildBiomes>
 		    <AridShrubland>0.03</AridShrubland>
 		    <TemperateForest>0.02</TemperateForest>
@@ -533,7 +538,7 @@
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
     <tradeTags>
-      <li>StandardAnimal</li>
+      <li>AnimalCommon</li>
       <li>BadassAnimal</li>
       <li>AnimalFarm</li>
     </tradeTags>
@@ -633,9 +638,10 @@
     <label>nexu</label>
     <description>Nexu's are agile predators with four red eyes and sharp quills. They have infrared vision and are 4.51 meters long. Typically 0.94 meters tall, nexus possess sharp teeth and claws, as well as long tails. It's light build allows it to remain highly agile and difficult to hit.</description>
 	  <statBases>
-      <MoveSpeed>8</MoveSpeed>
-      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
-      <MarketValue>1000</MarketValue>
+      <MoveSpeed>5</MoveSpeed>
+      <ComfyTemperatureMin>10</ComfyTemperatureMin>
+      <ComfyTemperatureMax>21</ComfyTemperatureMax>
+      <MarketValue>400</MarketValue>
       <MeatAmount>75</MeatAmount>
       <LeatherAmount>20</LeatherAmount>
     </statBases>
@@ -681,10 +687,10 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>15</power>
+        <power>16</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.9</chanceFactor>
+        <chanceFactor>0.7</chanceFactor>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -699,7 +705,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>5</power>
+        <power>9</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -709,19 +715,19 @@
 	  <race>
       <predator>true</predator>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>0.25</baseHungerRate>
-      <baseBodySize>1.7</baseBodySize>
-      <baseHealthScale>2.0</baseHealthScale>
+      <maxPreyBodySize>1.0</maxPreyBodySize>
+      <baseHungerRate>0.3</baseHungerRate>
+      <baseBodySize>1.4</baseBodySize>
+      <baseHealthScale>1.3</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
-      <gestationPeriodDays>22</gestationPeriodDays>
-      <wildness>0.9</wildness>
-	    <petness>0.5</petness>
+      <wildness>0.8</wildness>
       <lifeExpectancy>25</lifeExpectancy>
       <trainability>Advanced</trainability>
-      <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.10</manhunterOnDamageChance>
       <leatherDef>nexu_fur</leatherDef>
       <meatLabel>nexu meat</meatLabel>
+      <gestationPeriodDays>26</gestationPeriodDays>
 	    <wildBiomes>
 		    <AridShrubland>0.02</AridShrubland>
 		    <TemperateForest>0.02</TemperateForest>
@@ -764,7 +770,7 @@
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
     <tradeTags>
-      <li>StandardAnimal</li>
+      <li>AnimalUncommon</li>
       <li>BadassAnimal</li>
       <li>AnimalFighter</li>
     </tradeTags>
@@ -774,7 +780,8 @@
     <defName>Nexu</defName>
     <label>nexu</label>
     <race>Nexu</race>    
-	  <combatPower>200</combatPower>
+	  <combatPower>120</combatPower>
+    <ecoSystemWeight>0.50</ecoSystemWeight>
 	  <wildGroupSize>
       <min>2</min>
       <max>3</max>
@@ -857,12 +864,13 @@
     <description>The acklay is a non-sentient carnivore native to Vendaxa. Acklays have sharp claws, thick skin, and are about 3 meters tall. Due to these attributes, as well as the species' ferocity, acklays are often exported from Vendaxa to be used in gladiatorial combat. The creatures can be found on Geonosis, where they are commonly brought in to fight other creatures—and sentients—in the Petranaki arena.</description>
 	  <statBases>
       <MoveSpeed>7</MoveSpeed>
-      <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+      <ComfyTemperatureMin>7</ComfyTemperatureMin>
+      <ComfyTemperatureMax>50</ComfyTemperatureMax>
       <MarketValue>1800</MarketValue>
       <MeatAmount>80</MeatAmount>
       <LeatherAmount>20</LeatherAmount>
       <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.27</ArmorRating_Sharp>
+      <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
     </statBases>
     <tools>
       <li>
@@ -896,18 +904,18 @@
 	  <race>
       <predator>true</predator>
       <body>BeetleLikeWithClaw</body>
-      <baseHungerRate>0.35</baseHungerRate>
-      <baseBodySize>1.5</baseBodySize>
-      <baseHealthScale>2.5</baseHealthScale>
+      <baseHungerRate>3.5</baseHungerRate>
+      <baseBodySize>4</baseBodySize>
+      <baseHealthScale>8</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
-      <gestationPeriodDays>10</gestationPeriodDays>
       <wildness>0.95</wildness>
       <lifeExpectancy>35</lifeExpectancy>
       <trainability>Advanced</trainability>
       <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
       <leatherDef>acklay_hide</leatherDef>
       <meatLabel>acklay meat</meatLabel>
+      <gestationPeriodDays>12</gestationPeriodDays>
 	    <wildBiomes>
 	      <AridShrubland>0.014</AridShrubland>
 		    <TemperateForest>0.008</TemperateForest>
@@ -957,7 +965,7 @@
     <label>acklay</label>
     <race>Acklay</race>    
 	  <combatPower>500</combatPower>
-		<ecoSystemWeight>0.50</ecoSystemWeight>
+		<ecoSystemWeight>1</ecoSystemWeight>
   	<wildGroupSize>
       <min>1</min>
       <max>1</max>
@@ -1088,16 +1096,13 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
     </tools>
-	  <comps>
-    </comps>
 	  <race>
       <herdAnimal>true</herdAnimal>
       <body>TheropodWithClaws</body>
       <baseHungerRate>0.45</baseHungerRate>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1</baseHealthScale>
-      <foodType>OmnivoreAnimal</foodType>
-      <gestationPeriodDays>25</gestationPeriodDays>
+      <foodType>VegetarianRoughAnimal</foodType>
       <wildness>0.6</wildness>
       <lifeExpectancy>20</lifeExpectancy>
       <trainability>Simple</trainability>
@@ -1105,6 +1110,7 @@
       <manhunterOnDamageChance>0.5</manhunterOnDamageChance>
       <leatherDef>tauntaun_hide</leatherDef>
       <meatLabel>tauntaun meat</meatLabel>
+      <gestationPeriodDays>28</gestationPeriodDays>
 	    <wildBiomes>
 		    <AridShrubland>0</AridShrubland>
 		    <TemperateForest>0</TemperateForest>
@@ -1229,7 +1235,10 @@
     <description>Krayt dragons are large, carnivorous reptiles from Tatooine, a desert planet in the galaxy's Outer Rim Territories. They come in two subspecies and, despite their fierceness, are hunted for the precious pearls found in their bodies.</description>
 	  <statBases>
       <MoveSpeed>7</MoveSpeed>
-      <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+      <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+      <ComfyTemperatureMin>-18</ComfyTemperatureMin>
+      <ComfyTemperatureMax>49</ComfyTemperatureMax>
       <MarketValue>3600</MarketValue>
       <MeatAmount>80</MeatAmount>
       <LeatherAmount>20</LeatherAmount>
@@ -1312,16 +1321,16 @@
 	  <race>
       <predator>true</predator>
       <body>ThyreophoraeWithSpikes</body>
-      <baseHungerRate>0.55</baseHungerRate>
-      <baseBodySize>12</baseBodySize>
+      <baseHungerRate>3.5</baseHungerRate>
+      <baseBodySize>6</baseBodySize>
       <baseHealthScale>10</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
-      <gestationPeriodDays>30</gestationPeriodDays>
       <wildness>0.9</wildness>
       <lifeExpectancy>100</lifeExpectancy>
       <trainability>Advanced</trainability>
       <leatherDef>KraytDragon_hide</leatherDef>
       <meatLabel>krayt dragon meat</meatLabel>
+      <gestationPeriodDays>60</gestationPeriodDays>
 	    <wildBiomes>
 		    <AridShrubland>0.008</AridShrubland>
 		    <TemperateForest>0.008</TemperateForest>
@@ -1355,7 +1364,7 @@
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
     <tradeTags>
-      <li>StandardAnimal</li>
+      <li>AnimalExotic</li>
       <li>BadassAnimal</li>
       <li>AnimalFighter</li>
     </tradeTags>
@@ -1454,7 +1463,8 @@
     <description>Reeks are large, muscular quadrupeds native to the planet Ylesia. Their sprawling posture and immense weight make them relatively slow-moving. They sport two large cheek horns that can be used for head-locking in combat with another Reek as a show of dominance.</description>
 	  <statBases>
       <MoveSpeed>5</MoveSpeed>
-      <ComfyTemperatureMin>-8</ComfyTemperatureMin>
+      <ComfyTemperatureMin>7</ComfyTemperatureMin>
+      <ComfyTemperatureMax>15</ComfyTemperatureMax>
       <MarketValue>1500</MarketValue>
       <MeatAmount>100</MeatAmount>
       <LeatherAmount>24</LeatherAmount>
@@ -1525,14 +1535,14 @@
       <baseHungerRate>1.5</baseHungerRate>
       <baseBodySize>3</baseBodySize>
       <baseHealthScale>3.5</baseHealthScale>
-      <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
-      <gestationPeriodDays>40</gestationPeriodDays>
+      <foodType>OmnivoreAnimal, VegetarianRoughAnimal</foodType>
       <packAnimal>true</packAnimal>
       <wildness>0.90</wildness>
       <lifeExpectancy>55</lifeExpectancy>
       <trainability>Advanced</trainability>
       <leatherDef>reek_hide</leatherDef>
       <meatLabel>reek meat</meatLabel>
+      <gestationPeriodDays>28</gestationPeriodDays>
 	    <wildBiomes>
 		    <AridShrubland>0.02</AridShrubland>
 		    <TemperateForest>0.04</TemperateForest>
@@ -1566,7 +1576,7 @@
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
     <tradeTags>
-      <li>StandardAnimal</li>
+      <li>AnimalUncommon</li>
       <li>BadassAnimal</li>
       <li>AnimalFighter</li>
     </tradeTags>
@@ -1576,7 +1586,7 @@
     <defName>Reek</defName>
     <label>reek</label>
     <race>Reek</race>    
-	  <combatPower>325</combatPower>
+	  <combatPower>270</combatPower>
     <ecoSystemWeight>1.5</ecoSystemWeight>
 	  <wildGroupSize>
       <min>2</min>
@@ -1660,7 +1670,8 @@
     <description>The nerf.</description>
 	  <statBases>
       <MoveSpeed>3.2</MoveSpeed>
-      <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+      <ComfyTemperatureMin>7</ComfyTemperatureMin>
+      <ComfyTemperatureMax>15</ComfyTemperatureMax>
       <MarketValue>400</MarketValue>
       <MeatAmount>90</MeatAmount>
       <LeatherAmount>32</LeatherAmount>
@@ -1733,18 +1744,18 @@
       <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithHoovesAndHorn</body>
       <baseHungerRate>0.85</baseHungerRate>
-      <baseBodySize>2.0</baseBodySize>
-      <baseHealthScale>1.5</baseHealthScale>
+      <baseBodySize>2.1</baseBodySize>
+      <baseHealthScale>1.75</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
-      <gestationPeriodDays>20</gestationPeriodDays>
       <packAnimal>true</packAnimal>
-      <wildness>0.05</wildness>
+      <wildness>0.6</wildness>
       <lifeExpectancy>55</lifeExpectancy>
       <trainability>Simple</trainability>
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
       <leatherDef>nerf_hide</leatherDef>
       <meatLabel>nerf_meat</meatLabel>
+      <gestationPeriodDays>28</gestationPeriodDays>
 	    <wildBiomes>
 		    <AridShrubland>0.03</AridShrubland>
 		    <TemperateForest>0.03</TemperateForest>
@@ -1778,7 +1789,7 @@
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
     <tradeTags>
-      <li>StandardAnimal</li>
+      <li>AnimalCommon</li>
       <li>AnimalFarm</li>
     </tradeTags>
   </ThingDef>
@@ -1787,7 +1798,7 @@
     <defName>Nerf</defName>
     <label>nerf</label>
     <race>Nerf</race>    
-	  <combatPower>55</combatPower>
+	  <combatPower>100</combatPower>
     <ecoSystemWeight>1.1</ecoSystemWeight>
 	  <wildGroupSize>
       <min>3</min>
@@ -1877,8 +1888,8 @@
     <statBases>
       <MoveSpeed>3.0</MoveSpeed>
       <MarketValue>100</MarketValue>
-      <ComfyTemperatureMin>0</ComfyTemperatureMin>
-      <ComfyTemperatureMax>60</ComfyTemperatureMax>
+      <ComfyTemperatureMin>21</ComfyTemperatureMin>
+      <ComfyTemperatureMax>30</ComfyTemperatureMax>
     </statBases>
     <tools>
       <li>
@@ -1935,9 +1946,9 @@
     </comps>
     <race>
 			<body>QuadrupedAnimalWithClawsTailAndJowl</body>
-			<baseBodySize>0.18</baseBodySize>
-      <baseHealthScale>0.4</baseHealthScale>
-			<baseHungerRate>0.35</baseHungerRate>
+			<baseBodySize>0.2</baseBodySize>
+      <baseHealthScale>0.5</baseHealthScale>
+			<baseHungerRate>0.28</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
       <leatherDef>gizka_skin</leatherDef>
       <meatLabel>gizka meat</meatLabel>
@@ -1945,7 +1956,7 @@
 	    <trainability>Simple</trainability>
       <petness>0.15</petness>
       <lifeExpectancy>12</lifeExpectancy>
-      <gestationPeriodDays>7</gestationPeriodDays>
+      <gestationPeriodDays>12</gestationPeriodDays>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -1969,7 +1980,7 @@
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
     </race>
     <tradeTags>
-      <li>StandardAnimal</li>
+      <li>AnimalUncommon</li>
     </tradeTags>
   </ThingDef>
 
@@ -2026,7 +2037,8 @@
     <description>The Porg.</description>
     <statBases>
       <MoveSpeed>2.1</MoveSpeed>
-      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+      <ComfyTemperatureMin>4</ComfyTemperatureMin>
+      <ComfyTemperatureMax>21</ComfyTemperatureMax>
       <MarketValue>75</MarketValue>
 	    <LeatherAmount>0</LeatherAmount>
     </statBases>
@@ -2081,8 +2093,8 @@
       <leatherDef>porg_hide</leatherDef>
       <meatLabel>porg meat</meatLabel>
       <lifeExpectancy>6</lifeExpectancy>
-      <gestationPeriodDays>7</gestationPeriodDays>
       <mateMtbHours>8</mateMtbHours>
+      <gestationPeriodDays>16</gestationPeriodDays>
       <lifeStageAges>
         <li>
           <def>AnimalBabyTiny</def>
@@ -2110,7 +2122,7 @@
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
     </race>
     <tradeTags>
-      <li>StandardAnimal</li>
+      <li>AnimalCommon</li>
     </tradeTags>
   </ThingDef>
 
@@ -2166,7 +2178,8 @@
     <description>The Vulptex.</description>
     <statBases>
       <MoveSpeed>3.1</MoveSpeed>
-      <ComfyTemperatureMin>10</ComfyTemperatureMin>
+      <ComfyTemperatureMin>7</ComfyTemperatureMin>
+      <ComfyTemperatureMax>26</ComfyTemperatureMax>
       <MarketValue>100</MarketValue>
 	    <LeatherAmount>0</LeatherAmount>
     </statBases>
@@ -2213,7 +2226,8 @@
     </tools>
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <petness>1</petness>
+      <petness>0.1</petness>
+      <maxPreyBodySize>0.8</maxPreyBodySize>
       <baseBodySize>0.55</baseBodySize>
       <baseHungerRate>0.12</baseHungerRate>
       <baseHealthScale>0.7</baseHealthScale>
@@ -2221,10 +2235,10 @@
       <leatherDef>vulptex_hide</leatherDef>
       <meatLabel>vulptex meat</meatLabel>
       <nameOnTameChance>1</nameOnTameChance>
-      <trainability>Intermediate</trainability>
-      <wildness>0</wildness>
+      <trainability>Advanced</trainability>
+      <wildness>0.75</wildness>
       <nuzzleMtbHours>24</nuzzleMtbHours>
-      <gestationPeriodDays>24</gestationPeriodDays>
+      <gestationPeriodDays>21</gestationPeriodDays>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
@@ -2257,7 +2271,7 @@
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
     </race>
     <tradeTags>
-      <li>StandardAnimal</li>
+      <li>AnimalCommon</li>
     </tradeTags>
   </ThingDef>
 
@@ -2265,8 +2279,8 @@
     <defName>Vulptex</defName>
     <label>vulptex</label>
     <race>Vulptex</race>
-    <combatPower>30</combatPower>
-    <ecoSystemWeight>0.30</ecoSystemWeight>
+    <combatPower>45</combatPower>
+    <ecoSystemWeight>0.25</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -2310,7 +2324,8 @@
 	  <statBases>
       <MoveSpeed>7</MoveSpeed>
       <MarketValue>3000</MarketValue>
-      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+      <ComfyTemperatureMax>10</ComfyTemperatureMax>
       <MeatAmount>80</MeatAmount>
       <LeatherAmount>20</LeatherAmount>
     </statBases>
@@ -2407,18 +2422,19 @@
 	  <race>
       <body>HairBeast</body>
       <predator>true</predator>
-      <baseBodySize>6</baseBodySize>
-      <baseHungerRate>0.55</baseHungerRate>
-      <baseHealthScale>7</baseHealthScale>
+      <maxPreyBodySize>3</maxPreyBodySize>
+      <baseBodySize>2.15</baseBodySize>
+      <baseHungerRate>0.35</baseHungerRate>
+      <baseHealthScale>2.5</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
-      <gestationPeriodDays>30</gestationPeriodDays>
-      <wildness>0.95</wildness>
+      <wildness>0.85</wildness>
       <lifeExpectancy>40</lifeExpectancy>
       <trainability>Advanced</trainability>
-      <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.5</manhunterOnDamageChance>
       <leatherDef>wampa_hide</leatherDef>
       <meatLabel>wampa meat</meatLabel>
+      <gestationPeriodDays>30</gestationPeriodDays>
 	    <wildBiomes>
 		    <AridShrubland>0.0</AridShrubland>
 		    <TemperateForest>0.0</TemperateForest>
@@ -2452,7 +2468,7 @@
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
     <tradeTags>
-      <li>StandardAnimal</li>
+      <li>AnimalUncommon</li>
       <li>BadassAnimal</li>
       <li>AnimalFighter</li>
     </tradeTags>
@@ -2462,8 +2478,8 @@
     <defName>Wampa</defName>
     <label>wampa</label>
     <race>Wampa</race>    
-	  <combatPower>600</combatPower>
-    <ecoSystemWeight>1.5</ecoSystemWeight>
+	  <combatPower>200</combatPower>
+    <ecoSystemWeight>0.5</ecoSystemWeight>
 	  <wildGroupSize>
       <min>1</min>
       <max>1</max>

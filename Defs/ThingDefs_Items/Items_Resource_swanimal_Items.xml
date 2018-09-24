@@ -153,8 +153,8 @@
       <statFactors>
         <ArmorRating_Sharp>1.1</ArmorRating_Sharp>
         <ArmorRating_Heat>2.2</ArmorRating_Heat>
-        <Insulation_Cold>3.0</Insulation_Cold>
-        <Insulation_Heat>3.0</Insulation_Heat>
+        <Insulation_Cold>15.0</Insulation_Cold>
+        <Insulation_Heat>45.0</Insulation_Heat>
       </statFactors>
     </stuffProps>
   </ThingDef>
@@ -171,8 +171,8 @@
       <statFactors>
         <ArmorRating_Sharp>1.1</ArmorRating_Sharp>
         <ArmorRating_Heat>2.2</ArmorRating_Heat>
-        <Insulation_Cold>3.0</Insulation_Cold>
-        <Insulation_Heat>3.0</Insulation_Heat>
+        <Insulation_Cold>5.0</Insulation_Cold>
+        <Insulation_Heat>10.0</Insulation_Heat>
       </statFactors>
     </stuffProps>
   </ThingDef>
