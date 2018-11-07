@@ -18,6 +18,40 @@
     </statBases>
     <tools>
       <li>
+        <label>front left leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+		    <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>20</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+		    <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>20</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
         <label>tail</label>
         <capacities>
           <li>Blunt</li>
@@ -272,7 +306,7 @@
       <foodType>CarnivoreAnimal</foodType>
       <wildness>0.95</wildness>
       <lifeExpectancy>35</lifeExpectancy>
-      <trainability>Advanced</trainability>
+      <trainability>Intermediate</trainability>
       <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <leatherDef>rancor_hide</leatherDef>
@@ -497,9 +531,9 @@
       <baseHealthScale>5.2</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <packAnimal>true</packAnimal>
-      <wildness>0.6</wildness>
+      <wildness>0.25</wildness>
       <lifeExpectancy>100</lifeExpectancy>
-      <trainability>Simple</trainability>
+      <trainability>Intermediate</trainability>
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
       <leatherDef>bantha_hide</leatherDef>
@@ -905,12 +939,13 @@
       <predator>true</predator>
       <body>BeetleLikeWithClaw</body>
       <baseHungerRate>3.5</baseHungerRate>
+      <maxPreyBodySize>3</maxPreyBodySize>
       <baseBodySize>4</baseBodySize>
       <baseHealthScale>8</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
       <wildness>0.95</wildness>
       <lifeExpectancy>35</lifeExpectancy>
-      <trainability>Advanced</trainability>
+      <trainability>Intermediate</trainability>
       <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
       <leatherDef>acklay_hide</leatherDef>
@@ -1105,7 +1140,7 @@
       <foodType>VegetarianRoughAnimal</foodType>
       <wildness>0.6</wildness>
       <lifeExpectancy>20</lifeExpectancy>
-      <trainability>Simple</trainability>
+      <trainability>Advanced</trainability>
       <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.5</manhunterOnDamageChance>
       <leatherDef>tauntaun_hide</leatherDef>
@@ -1321,16 +1356,19 @@
 	  <race>
       <predator>true</predator>
       <body>ThyreophoraeWithSpikes</body>
+      <maxPreyBodySize>4</maxPreyBodySize>
       <baseHungerRate>3.5</baseHungerRate>
       <baseBodySize>6</baseBodySize>
       <baseHealthScale>10</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
-      <wildness>0.9</wildness>
+      <wildness>0.95</wildness>
       <lifeExpectancy>100</lifeExpectancy>
-      <trainability>Advanced</trainability>
+      <trainability>Intermediate</trainability>
       <leatherDef>KraytDragon_hide</leatherDef>
       <meatLabel>krayt dragon meat</meatLabel>
       <gestationPeriodDays>60</gestationPeriodDays>
+      <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
 	    <wildBiomes>
 		    <AridShrubland>0.008</AridShrubland>
 		    <TemperateForest>0.008</TemperateForest>
@@ -1670,8 +1708,8 @@
     <description>The nerf.</description>
 	  <statBases>
       <MoveSpeed>3.2</MoveSpeed>
-      <ComfyTemperatureMin>7</ComfyTemperatureMin>
-      <ComfyTemperatureMax>15</ComfyTemperatureMax>
+      <ComfyTemperatureMin>-2</ComfyTemperatureMin>
+      <ComfyTemperatureMax>18</ComfyTemperatureMax>
       <MarketValue>400</MarketValue>
       <MeatAmount>90</MeatAmount>
       <LeatherAmount>32</LeatherAmount>
@@ -1748,9 +1786,9 @@
       <baseHealthScale>1.75</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <packAnimal>true</packAnimal>
-      <wildness>0.6</wildness>
+      <wildness>0.25</wildness>
       <lifeExpectancy>55</lifeExpectancy>
-      <trainability>Simple</trainability>
+      <trainability>Intermediate</trainability>
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
       <leatherDef>nerf_hide</leatherDef>
@@ -1953,7 +1991,7 @@
       <leatherDef>gizka_skin</leatherDef>
       <meatLabel>gizka meat</meatLabel>
       <wildness>0.5</wildness>
-	    <trainability>Simple</trainability>
+	    <trainability>Intermediate</trainability>
       <petness>0.15</petness>
       <lifeExpectancy>12</lifeExpectancy>
       <gestationPeriodDays>12</gestationPeriodDays>
@@ -2429,9 +2467,9 @@
       <foodType>CarnivoreAnimal</foodType>
       <wildness>0.85</wildness>
       <lifeExpectancy>40</lifeExpectancy>
-      <trainability>Advanced</trainability>
-      <manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.5</manhunterOnDamageChance>
+      <trainability>Intermediate</trainability>
+      <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
       <leatherDef>wampa_hide</leatherDef>
       <meatLabel>wampa meat</meatLabel>
       <gestationPeriodDays>30</gestationPeriodDays>
@@ -2549,6 +2587,375 @@
         <dessicatedBodyGraphicData>
           <texPath>swanimals/dessicated/CritterDessicatedMedium</texPath>
           <drawSize>2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+    <!-- ========= Ronto ========= -->
+
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
+    <defName>Ronto</defName>
+    <label>ronto</label>
+    <description>Ronto</description>
+	  <statBases>
+      <MoveSpeed>4</MoveSpeed>
+      <MarketValue>3000</MarketValue>
+      <ComfyTemperatureMin>-18</ComfyTemperatureMin>
+      <ComfyTemperatureMax>49</ComfyTemperatureMax>
+      <MeatAmount>120</MeatAmount>
+      <LeatherAmount>40</LeatherAmount>
+    </statBases>
+	  <tools>
+      <li>
+        <label>front left leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+		    <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>20</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+		    <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>20</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>tail</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>TailAttackTool</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	  <race>
+      <body>ThyreophoraeWithClub</body>
+      <baseBodySize>5</baseBodySize>
+      <baseHungerRate>3</baseHungerRate>
+      <baseHealthScale>6</baseHealthScale>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <wildness>0.6</wildness>
+      <lifeExpectancy>100</lifeExpectancy>
+      <trainability>Advanced</trainability>
+      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.25</manhunterOnDamageChance>
+      <leatherDef>ronto_hide</leatherDef>
+      <meatLabel>ronto meat</meatLabel>
+      <gestationPeriodDays>28</gestationPeriodDays>
+	    <wildBiomes>
+		    <AridShrubland>0.02</AridShrubland>
+		    <TemperateForest>0.04</TemperateForest>
+		    <TropicalRainforest>0.01</TropicalRainforest>
+		    <IceSheet>0</IceSheet>
+		    <BorealForest>0.04</BorealForest>
+		    <Tundra>0.05</Tundra>
+		    <Desert>0.05</Desert>
+	    </wildBiomes>
+	    <nuzzleMtbHours>275</nuzzleMtbHours>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.4</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.8</minAge>
+          <soundWounded>Pawn_Rhinoceros_Wounded</soundWounded>
+          <soundDeath>Pawn_Rhinoceros_Death</soundDeath>
+          <soundCall>Pawn_Rhinoceros_Call</soundCall>
+          <soundAngry>Pawn_Rhinoceros_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>BadassAnimal</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Ronto</defName>
+    <label>ronto</label>
+    <race>Ronto</race>    
+	  <combatPower>500</combatPower>
+    <ecoSystemWeight>1.5</ecoSystemWeight>
+	  <wildGroupSize>
+      <min>1</min>
+      <max>1</max>
+    </wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>swanimals/Ronto</texPath>
+          <drawSize>3.3</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>swanimals/Ronto</texPath>
+          <drawSize>3.1</drawSize>
+		      <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>swanimals/dessicated/CritterDessicatedMedium</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>swanimals/Ronto</texPath>
+          <drawSize>4.8</drawSize>
+          <shadowData>
+            <volume>(1.2, 1, 1)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>swanimals/Ronto</texPath>
+          <drawSize>4.6</drawSize>
+		      <shadowData>
+            <volume>(1.2, 1, 1)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>swanimals/dessicated/CritterDessicatedMedium</texPath>
+          <drawSize>4.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>swanimals/Ronto</texPath>
+          <drawSize>6.3</drawSize>
+          <shadowData>
+            <volume>(1.2, 1, 1)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>swanimals/Ronto</texPath>
+          <drawSize>6.1</drawSize>
+		      <shadowData>
+            <volume>(1.2, 1, 1)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>swanimals/dessicated/CritterDessicatedMedium</texPath>
+          <drawSize>6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+        <!-- ========= Frog-dog ========= -->
+		   
+	<ThingDef ParentName="AnimalThingBase">
+    <defName>Frog-dog</defName>
+    <label>frog-dog</label>
+    <description>Frog-dog</description>
+    <statBases>
+      <MoveSpeed>4.0</MoveSpeed>
+      <MarketValue>100</MarketValue>
+      <ComfyTemperatureMin>21</ComfyTemperatureMin>
+      <ComfyTemperatureMax>30</ComfyTemperatureMax>
+    </statBases>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+	    <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_EggLayer">
+	  	  <eggUnfertilizedDef>EggGizkaUnfertilized</eggUnfertilizedDef>
+        <eggFertilizedDef>EggGizkaFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>1</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>
+          <min>1</min>
+          <max>2</max>
+        </eggCountRange>
+      </li>
+    </comps>
+    <race>
+			<body>Frog-dog_Body</body>
+			<baseBodySize>0.255</baseBodySize>
+      <baseHealthScale>0.5</baseHealthScale>
+			<baseHungerRate>0.12</baseHungerRate>
+			<foodType>OmnivoreRoughAnimal</foodType>
+      <leatherDef>frog-dog_skin</leatherDef>
+      <meatLabel>frog-dog meat</meatLabel>
+      <wildness>0.2</wildness>
+	    <trainability>Intermediate</trainability>
+      <petness>0.15</petness>
+      <lifeExpectancy>12</lifeExpectancy>
+      <gestationPeriodDays>12</gestationPeriodDays>
+	    <wildBiomes>
+		    <AridShrubland>0.02</AridShrubland>
+		    <TemperateForest>0.04</TemperateForest>
+		    <TropicalRainforest>0.01</TropicalRainforest>
+		    <IceSheet>0</IceSheet>
+		    <BorealForest>0.04</BorealForest>
+		    <Tundra>0.05</Tundra>
+		    <Desert>0.05</Desert>
+	    </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.12</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.3</minAge>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundCall>Pawn_Iguana_Call</soundCall>
+          <soundAngry>Pawn_Iguana_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Frog-dog</defName>
+    <label>frog-dog</label>
+    <race>Frog-dog</race>
+    <combatPower>40</combatPower>
+    <ecoSystemWeight>0.30</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>swanimals/Frog-dog</texPath>
+          <drawSize>0.6</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>swanimals/dessicated/CritterDessicatedSmall</texPath>
+          <drawSize>0.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>swanimals/Frog-dog</texPath>
+          <drawSize>0.8</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>swanimals/dessicated/CritterDessicatedSmall</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>swanimals/Frog-dog</texPath>
+          <drawSize>1</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>swanimals/dessicated/CritterDessicatedSmall</texPath>
+          <drawSize>1</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
